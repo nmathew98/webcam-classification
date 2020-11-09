@@ -5,12 +5,12 @@ import { ViewChild } from '@angular/core';
 import { ElementRef } from '@angular/core';
 
 @Component({
-	selector: 'app-upload',
-	templateUrl: './upload.component.html',
-	styleUrls: ['./upload.component.scss'],
+	selector: 'app-image',
+	templateUrl: './image.component.html',
+	styleUrls: ['./image.component.scss'],
 })
-export class UploadComponent implements OnInit {
-	model: any;
+export class ImageComponent implements OnInit {
+	model: mobilenet.MobileNet;
 	loading: boolean = true;
 	imageSource: string;
 	predictions: Prediction[];

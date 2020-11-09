@@ -3,11 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UploadComponent } from './upload/upload.component';
-import { WebcamComponent } from './webcam/webcam.component';
+import { ImageComponent } from './image/image.component';
 
 @NgModule({
-	declarations: [AppComponent, UploadComponent, WebcamComponent],
+	declarations: [AppComponent, ImageComponent],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [],
 	bootstrap: [AppComponent],
