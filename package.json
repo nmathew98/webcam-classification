@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"scripts": {
 		"ng": "ng",
-		"start": "ng serve", 
+		"start": "node server.js",
 		"build": "ng build",
 		"test": "ng test",
 		"lint": "ng lint",
@@ -25,6 +25,9 @@
 		"@angular/router": "~10.2.0",
 		"@tensorflow-models/mobilenet": "^2.0.4",
 		"@tensorflow/tfjs": "^2.7.0",
+		"@tensorflow/tfjs-converter": "^1.2.11",
+		"@tensorflow/tfjs-core": "^1.2.11",
+		"@tensorflow/tfjs-node": "^2.7.0",
 		"@types/webgl2": "^0.0.4",
 		"express": "^4.17.1",
 		"rxjs": "~6.6.0",
