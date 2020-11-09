@@ -1,13 +1,16 @@
-<div class="d-flex justify-content-center align-items-center flex-column">
-	<video autoplay playsinline muted id="webcam" width="300" height="300" #video></video>
+<video autoplay playsinline muted class="shadow-lg" width="500px" height="500px" #video></video>
 
-	<div *ngIf="loading">
-		<img src="./assets/loading.gif" />
-	</div>
-
-	<div class="list-group">
-		<div class="list-group-item" *ngFor="let prediction of predictions">
-			{{ prediction.className }} - {{ prediction.probability }}
-		</div>
-	</div>
-</div>
+<table class="table bg-white shadow-lg mt-8 rounded-lg" width="500px" height="30px">
+	<thead>
+		<tr>
+			<th class="px-4 py-2">Prediction</th>
+			<th class="px-4 py-2">Probability</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let prediction of predictions">
+			<td class="border px-4 py-2">{{ prediction.className }}</td>
+			<td class="border px-4 py-2">{{ prediction.probability }}</td>
+		</tr>
+	</tbody>
+</table>

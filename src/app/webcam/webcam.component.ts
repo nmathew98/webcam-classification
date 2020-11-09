@@ -21,12 +21,12 @@ export class WebcamComponent implements OnInit, AfterViewInit {
 	ngOnInit(): void {
 		this.loading = true;
 		this.load();
-		this.loading = false;
 
 		setInterval(async () => {
 			this.predictions = await this.model.classify(this.video.nativeElement);
 			await tf.nextFrame();
 		}, 3000);
+		this.loading = false;
 	}
 
 	async ngAfterViewInit() {
